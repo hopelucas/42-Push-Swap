@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   error_handling.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hlucas <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/19 16:36:30 by hlucas            #+#    #+#             */
+/*   Updated: 2022/05/23 17:02:04 by hlucas           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/push_swap.h"
 
 static void	sort_quarters_helper(t_list **stack_a,
-				t_list **stack_b, t_median *median);
+				t_list	**stack_b, t_median	*median);
 
-void	sort_halves(t_list **stack_a, t_list	**stack_b)
+void	sort_halves(t_list **stack_a, t_list **stack_b)
 {
 	t_median	*median;
 
@@ -30,7 +42,7 @@ void	sort_halves(t_list **stack_a, t_list	**stack_b)
 	free(median);
 }
 
-void	sort_quarters(t_list **stack_a, t_list	**stack_b)
+void	sort_quarters(t_list **stack_a, t_list **stack_b)
 {
 	t_median	*median;
 
@@ -60,7 +72,7 @@ void	sort_quarters(t_list **stack_a, t_list	**stack_b)
 }
 
 static void	sort_quarters_helper(t_list **stack_a,
-				t_list **stack_b, t_median *median)
+		t_list	**stack_b,	t_median	*median)
 {
 	while (*stack_b)
 		ft_small_pa(stack_a, stack_b);

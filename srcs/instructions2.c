@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   error_handling.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hlucas <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/19 16:36:30 by hlucas            #+#    #+#             */
+/*   Updated: 2022/05/23 16:01:52 by hlucas           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/push_swap.h"
 
 void	ra(t_list **stack_a, bool flag)
@@ -90,7 +102,7 @@ The last element becomes the first one.*/
 			temp = temp->next;
 	}
 	temp->next = NULL;
-	ft_lstadd_front(stack_b, first);
+	ft_lstadd_front (stack_b, first);
 	if (flag)
 		write(1, "rrb\n", 4);
 }

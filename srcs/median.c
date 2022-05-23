@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   error_handling.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hlucas <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/19 16:36:30 by hlucas            #+#    #+#             */
+/*   Updated: 2022/05/23 16:18:22 by hlucas           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/push_swap.h"
 
 static bool	swap(int *xp, int *yp)
@@ -53,8 +65,8 @@ t_median	*find_median(t_list **lst, int l)
 	t_median	*median;
 
 	median = NULL;
-	array = (int *) malloc(l);
-	median = malloc(sizeof (t_median));
+	array = (int *)malloc(l);
+	median = malloc(sizeof(t_median));
 	tmp = *lst;
 	if (!array || !median)
 		return (NULL);

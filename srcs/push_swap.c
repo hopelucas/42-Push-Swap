@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   error_handling.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hlucas <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/19 16:36:30 by hlucas            #+#    #+#             */
+/*   Updated: 2022/05/23 16:45:50 by hlucas           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/push_swap.h"
 
 static void	reverse(t_list **stack_a)
@@ -51,7 +63,7 @@ void	sort5(t_list **stack_a, t_list **stack_b)
 
 static void	ft_init_list(t_list **stack_a, char **argv)
 {
-	int		i;
+	int	i;
 
 	ft_error(argv);
 	*stack_a = malloc(sizeof(t_list));

@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   error_handling.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hlucas <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/19 16:36:30 by hlucas            #+#    #+#             */
+/*   Updated: 2022/05/23 16:15:53 by hlucas           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/push_swap.h"
 
-void	ft_lst_free(t_list	**lst)
+void	ft_lst_free(t_list **lst)
 {
 	t_list	*temp;
 
@@ -38,7 +50,7 @@ void	ft_lst_copy(t_list **input, t_list **output)
 	}
 }
 
-void	ft_lstdel_front(t_list	**lst)
+void	ft_lstdel_front(t_list **lst)
 {
 	t_list	*temp;
 

@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hlucas <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/30 16:07:20 by hlucas            #+#    #+#             */
+/*   Updated: 2022/05/23 14:10:07 by hlucas           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
-# include "../libft/libft.h"
+# include "../Libft/libft.h"
 
-typedef struct s_median {
+typedef struct s_median
+{
 	int	xs;
 	int	s;
 	int	sm;
@@ -12,7 +25,7 @@ typedef struct s_median {
 	int	xl;
 }	t_median;
 
-void		ft_lstdel_front(t_list	**lst);
+void		ft_lstdel_front(t_list **lst);
 void		ft_lst_copy(t_list **input, t_list **output);
 void		sa(t_list **stack_a, bool flag);
 void		sb(t_list **stack_b, bool flag);
@@ -35,6 +48,6 @@ int			ft_error(char **argv);
 t_median	*find_median(t_list **lst, int l);
 int			ft_find_smallest(t_list **stack, int x);
 void		ft_push_smallest_a(t_list **stack_a, t_list **stack_b);
-void		ft_lst_free(t_list	**lst);
+void		ft_lst_free(t_list **lst);
 
 #endif

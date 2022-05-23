@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   error_handling.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hlucas <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/19 16:36:30 by hlucas            #+#    #+#             */
+/*   Updated: 2022/05/23 17:03:30 by hlucas           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/push_swap.h"
 
 static void	second(t_list **stack_a, t_list **stack_b, t_median *median);
 static void	third(t_list **stack_a, t_list **stack_b, t_median *median);
 static void	fourth(t_list **stack_a, t_list **stack_b, t_median *median);
 
-void	sort_eighths(t_list **stack_a, t_list	**stack_b)
+void	sort_eighths(t_list **stack_a, t_list **stack_b)
 {
 	t_median	*median;
 
